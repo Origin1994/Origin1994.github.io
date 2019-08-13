@@ -1,0 +1,38 @@
+.site-bg{
+    background-attachment: fixed;
+    background-image: url("../images/home.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    z-index: 0;
+}
+.page-content{
+    position: relative;
+    margin: auto;
+    height: 700px;
+    line-height:700px;
+}
+.cover-container {
+    color: white;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    text-align: center;/*让文字水平居中*/
+    margin: auto;
+}
+.cover-lead{
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+.pinyin{
+    font-size: 12px;
+    margin-bottom: 0px;
+}
+.cover-heading{
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
