@@ -36,3 +36,52 @@
     margin-top: 0px;
     margin-bottom: 20px;
 }
+.header-bg{
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    z-index: 99999;
+}
+.main-menu,.navbar-site{
+    color: black;
+    height: 75px;
+    line-height: 75px;
+    background-color: white;
+    border-color: white;
+
+}
+.collapse-site{
+    padding-right: 0px;
+}
+.site-name{
+    z-index: 99999;
+    padding: 30px 0px;
+    font-weight: 300;
+    color: black;
+}
+header .navbar-nav {
+    float: right;
+    right: -15px;
+    position: absolute;
+    top: 15%;
+}
+.navbar-site-secondary{
+    background-color: darkgrey;
+    height: 75px;
+    line-height: 75px;
+}
+.navbar-default .navbar-nav > li > a {
+    color: black;
+    font-size: 12px;
+}
+.main{
+    position: relative;
+    top: 150px;
+    height: 700px;
+}
+footer{
+    position: relative;
+    height: 150px;
+    line-height: 150px;
+    background-color: darkgrey;
+}
