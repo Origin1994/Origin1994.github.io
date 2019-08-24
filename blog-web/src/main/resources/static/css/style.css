@@ -71,6 +71,8 @@
     padding: 30px 0px;
     font-weight: 300;
     color: black;
+    font-size: 17px;
+    font-weight: bold;
 }
 
 header .navbar-nav {
@@ -139,7 +141,8 @@ header .navbar-nav {
 
 .about p {
     margin-bottom: 20px;
-    font-size: 18px;
+    margin-top: 20px;
+    font-size: 17px;
     color: #707070;
 }
 
@@ -253,7 +256,8 @@ header .navbar-nav {
 }
 
 .contact p {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
     font-size: 17px;
     color: #707070;
 }
