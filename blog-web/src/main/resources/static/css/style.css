@@ -82,17 +82,18 @@
 }
 
 .page-content {
-    position: relative;
+    /*position: relative;*/
     margin: auto;
-    height: 700px;
-    line-height: 700px;
+    min-height: 100px;
+    /*line-height: 700px;*/
 }
 
 .cover-container {
+    /*height: 100%;*/
     color: white;
     width: 100%;
     position: absolute;
-    top: 50%;
+    top: 40%;
     text-align: center; /*让文字水平居中*/
     margin: auto;
 }
@@ -102,8 +103,15 @@
     font-weight: 300;
     line-height: 1.4;
     margin-bottom: 20px;
+    letter-spacing: .20em;
 }
 
+.cover-lead> a,
+.cover-lead> a:hover,
+.cover-lead> a:focus {
+    color: white;
+    text-decoration: none;
+}
 .pinyin {
     font-size: 12px;
     margin-bottom: 0px;
@@ -112,7 +120,37 @@
 .cover-heading {
     margin-top: 0px;
     margin-bottom: 20px;
+    letter-spacing: .20em;
 }
+
+@media (min-width: 100px) {
+    .cover-heading {
+        font-size: 30px;
+        font-weight: bold;
+    }
+}
+
+@media (min-width: 1200px) {
+    .cover-heading {
+        font-size: 30px;
+        font-weight: bold;
+    }
+}
+@media (min-width: 1600px) {
+    .cover-heading {
+        font-size: 40px;
+        font-weight: bold;
+    }
+}
+
+
+@media (min-width: 1800px) {
+    .cover-heading {
+      font-size: 70px;
+      font-weight: 700;
+    }
+}
+
 
 .header-bg {
     position: fixed;
@@ -221,7 +259,7 @@ a:active, a:hover {
     margin-left: -15px;
 }
 
-.mian-bg {
+.main-bg {
     height: 100%;
     width: 1160px;
     z-index: -200;
