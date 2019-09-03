@@ -511,3 +511,9 @@ a:active, a:hover {
 .contact-label{
     height: 175px;
 }
+.heptamor .title{
+    padding-left: 255px;
+    font-size: 17pt;
+    font-weight: 700;
+    text-align: left;
+}
