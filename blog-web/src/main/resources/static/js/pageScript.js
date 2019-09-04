@@ -5,6 +5,7 @@ $(function () {
 
     $('.action').click(function () {
         var action =  $(this).attr("data-type");
+        location.hash = "type=" + action;
         $('#main').load(action + ".html");
     });
 
