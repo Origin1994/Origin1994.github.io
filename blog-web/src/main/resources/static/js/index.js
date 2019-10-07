@@ -7,13 +7,13 @@ function initLoad() {
         request.title = decodeURIComponent(decodeURIComponent(request.title));
         document.title = request.title + "|" + document.title;
     }
-    if (null != request["type"]) {
-        $('#main').load(request["type"] + ".html");
+    if (null != request["page"]) {
+        $('#main').load(request["page"] + ".html");
         $('.activity').remove();
-        var typeDom = $('[href="index.html#type=' + request["type"] + '"]');
-        var text = typeDom.text();
-        var dropdownMenu = typeDom.parent().parent();
-        var dom = typeDom;
+        var pageDom = $('[href="index.html#page=' + request["page"] + '"]');
+        var text = pageDom.text();
+        var dropdownMenu = pageDom.parent().parent();
+        var dom = pageDom;
         if (dropdownMenu.hasClass("dropdown-menu")) {
             var prevDom = dropdownMenu.prev();
             text = prevDom.text();

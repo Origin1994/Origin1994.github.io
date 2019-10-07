@@ -570,8 +570,20 @@ a:active, a:hover {
 /*    height: 200px;
     position: absolute;*/
 }
-.heptamor .page{
+.heptamor .pages{
     position: absolute;
     bottom: 10%;
-    right: 10px;
+    right: 45px;
+    font-family: JosefinSans-Regular;
+    cursor: pointer;
+}
+[js-do="list"] .item{
+    cursor: pointer;
+}
+.back{
+    margin-top: 40px;
+}
+.back-action{
+    font-size: 12pt;
+    font-family: sourceHanSansCN-Bold
 }

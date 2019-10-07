@@ -6,10 +6,78 @@
 
     <groupId>com.egzosn.blog</groupId>
     <artifactId>suiyeyuan</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.4.2.RELEASE</version>
+    </parent>
 
     <modules>
         <module>blog-web</module>
+        <module>infrastructure</module>
     </modules>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <java.version>1.8</java.version>
+        <egzosn.version>1.0-SNAPSHOT</egzosn.version>
+        <javax.inject.version>1</javax.inject.version>
+        <jsr250-api.version>1.0</jsr250-api.version>
+        <spring.data.version>1.12.2.RELEASE</spring.data.version>
+        <org.apache.commons.version>3.4</org.apache.commons.version>
+    </properties>
 
+<dependencyManagement>
+    <dependencies>
+
+        <!--egzosn-->
+
+        <dependency>
+            <groupId>com.egzosn</groupId>
+            <artifactId>utils</artifactId>
+            <version>${egzosn.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.egzosn</groupId>
+            <artifactId>database</artifactId>
+            <version>${egzosn.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.egzosn</groupId>
+            <artifactId>web</artifactId>
+            <version>${egzosn.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.egzosn.jdbc</groupId>
+            <artifactId>dao-params</artifactId>
+            <version>${egzosn.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.egzosn.jdbc</groupId>
+            <artifactId>sql-filter</artifactId>
+            <version>${egzosn.version}</version>
+        </dependency>
+        <!--/egzosn-->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.17</version>
+        </dependency>
+
+
+        <!-- Swagger -->
+  <!--      <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>2.6.1</version>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>2.6.1</version>
+        </dependency>-->
+    </dependencies>
+
+</dependencyManagement>
 </project>

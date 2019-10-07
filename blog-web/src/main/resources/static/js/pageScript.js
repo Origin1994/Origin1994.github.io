@@ -4,8 +4,8 @@
 $(function () {
 
     $('.action').click(function () {
-        var action =  $(this).attr("data-type");
-        location.hash = "type=" + action;
+        var action =  $(this).attr("data-page");
+        location.hash = "page=" + action;
         $('#main').load(action + ".html");
     });
 
@@ -15,7 +15,7 @@ $(function () {
         if (nextDom.hasClass("dropdown-toggle")){
             var url = nextDom.attr("href");
             location.href = url;
-            $('#main').load( url.replace("index.html#type=", "")+ ".html");
+            $('#main').load( url.replace("index.html#page=", "")+ ".html");
         }
        /* var w = that.parent().outerWidth();
         that.css("left", ((w)/4) + "px");*/
