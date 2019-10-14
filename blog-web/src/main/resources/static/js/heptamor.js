@@ -3,7 +3,7 @@
  */
 $(function () {
     load("./json/heptamor.json", '[js-do="list"]',{
-        cllack:function (rows, data) {
+        callback:function (rows, data) {
             $("#image").attr("src", data.image);
             initEvent();
         }

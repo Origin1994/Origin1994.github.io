@@ -35,10 +35,10 @@ var _options = {
     rowFilter:function(dom, row, data){
         return dom;
     },
-    befor:function(row, data){
+    before:function(row, data){
         return row;
     },
-    cllack:function(row,data){
+    callback:function(row,data){
         return row;
     }
 
@@ -59,18 +59,18 @@ function load(url, dom, options){
                 for(var i in rows){
                     var html = options.rowFilter(content,  rows[i], data)
                     //if(options.befor){
-                        rows[i] = options.befor(rows[i], data);
+                        rows[i] = options.before(rows[i], data);
                     //}
                     $(dom).append(drawing(html, rows[i]));
                 }
                 //if(options.cllack){
-                    options.cllack(rows, data);
+                    options.callback(rows, data);
                 //}
             }
         }
     })
 }
-function loadOne(url, dom, options){
+function loadOne(url, dom$, options){
     options = $.extend({}, _options,options);
     $.ajax({
         url : base + url,
@@ -80,14 +80,14 @@ function loadOne(url, dom, options){
             if (data.code == 0) {
                 var row = data.content;
                 //if(options.befor){
-                    row =options.befor(row);
+                    row =options.before(row);
                 //}
-                var dom= $(dom)
+                var dom= $(dom$)
                 var content = dom.html();
                 dom.html("");
                 dom.append(drawing(content, row));
                 //if(options.cllack){
-                    options.cllack();
+                    options.callback(row, data);
                 //}
             }
         }

@@ -560,10 +560,25 @@ a:active, a:hover {
 }
 
 .heptamor .title {
-    padding-left: 255px;
-    font-size: 17pt;
+    padding-left: 252px;
+    padding-bottom: 0;
+    font-size: 27pt;
     font-weight: 700;
     text-align: left;
+    line-height: 40px;
+
+}
+.heptamor .subtitle {
+    padding-left: 247px;
+    font-family: JosefinSans-Bold;
+    font-size: 17pt;
+}
+.heptamor .date,.heptamor .size {
+    float: right;
+    margin-right: 50px;
+    font-family: JosefinSans-Regular;
+    font-size: 20pt;
+
 }
 
 .heptamor .pages{
@@ -571,11 +586,20 @@ a:active, a:hover {
     position: absolute;*/
 }
 .heptamor .pages{
-    position: absolute;
+    position: fixed;
     bottom: 10%;
     right: 45px;
     font-family: JosefinSans-Regular;
     cursor: pointer;
+}
+.heptamor .image{
+    padding-bottom:0px;
+}
+.heptamor .description{
+    padding: 0 250px;
+    font-family: JosefinSans-Regular;
+    font-size: 17pt;
+    margin-bottom: 132px;
 }
 [js-do="list"] .item{
     cursor: pointer;
